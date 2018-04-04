@@ -2,7 +2,7 @@ FROM debian:latest
 
 # Install CURL and dependencies
 RUN apt-get update \ 
-    && apt-get install apt-transport-https ca-certificates curl software-properties-common -y
+    && apt-get install apt-transport-https ca-certificates curl software-properties-common gnupg -y
 
 # Install Docker and dependencies
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -\
