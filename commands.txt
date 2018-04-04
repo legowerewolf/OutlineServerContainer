@@ -1,0 +1,2 @@
+docker build . -t outline
+docker run outline --priveliged
